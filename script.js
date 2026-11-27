@@ -2,7 +2,8 @@ const cart = [];
 const money = value => value > 0 ? "R" + value.toFixed(0) : "Price to confirm";
 function renderCart(){
   const list=document.getElementById("cart-items");
-  const total=cart.reduce((sum,item)=>sum+item.price*item.qty,0);\n  const hasUnpriced=cart.some(item=>item.price===0);
+  const total=cart.reduce((sum,item)=>sum+item.price*item.qty,0);
+  const hasUnpriced=cart.some(item=>item.price===0);
   const count=cart.reduce((sum,item)=>sum+item.qty,0);
   document.getElementById("cart-count").textContent=count;
   document.getElementById("order-count").textContent=count+" "+(count===1?"item":"items");
@@ -23,7 +24,7 @@ document.getElementById("cart-items").addEventListener("click",event=>{
 });
 document.getElementById("checkout-button").addEventListener("click",()=>{
   if(!cart.length){alert("Please add at least one meal before continuing.");return;}
-  const summary=cart.map(item=>item.name+" x "+item.qty+" — "+money(item.price*item.qty)).join("\n");
-  alert("ORDER PREVIEW\n\n"+summary+"\n\nEstimated total: "+money(cart.reduce((sum,item)=>sum+item.price*item.qty,0))+"\n\nThis is a demo preview. Contact the business directly to confirm availability and place a real order.");
+  const summary=cart.map(item=>item.name+" x "+item.qty+" — "+(item.price>0?money(item.price*item.qty):"Price to confirm")).join("\n");
+  alert("ORDER PREVIEW\n\n"+summary+"\n\nTotal: Prices to be confirmed by the business."+"\n\nThis is a demo preview. Contact the business directly to confirm availability and place a real order.");
 });
 renderCart();
