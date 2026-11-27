@@ -13,7 +13,7 @@
   <header class="site-header">
     <div class="wrap nav">
       <a class="brand" href="#home" aria-label="KasiPlate home"><span class="brand-mark">K</span><span>Kasi<span class="brand-gold">Plate</span><small>GOOD FOOD. GOOD TIMES.</small></span></a>
-      <nav aria-label="Main navigation"><a href="#menu">Menu</a><a href="#how">How it works</a><a href="#contact">Contact</a></nav>
+      <nav aria-label="Main navigation"><a href="#breakfast">Breakfast</a><a href="#lunch">Lunch</a><a href="#supper">Supper</a><a href="#how">How it works</a><a href="#contact">Contact</a></nav>
       <a class="cart-link" href="#order">Your order <b id="cart-count">0</b></a>
     </div>
   </header>
@@ -40,39 +40,33 @@
       <div class="wrap strip-grid"><div><span>01</span><strong>Choose your meal</strong><small>Browse the menu</small></div><div><span>02</span><strong>Build your order</strong><small>Add your favourites</small></div><div><span>03</span><strong>Send your request</strong><small>Confirm details with the team</small></div></div>
     </section>
 
+
     <section class="menu-section" id="menu">
       <div class="wrap">
-        <div class="section-top"><div><span class="eyebrow red">THE KASIPLATE MENU</span><h2>What are you <em>feeling?</em></h2><p>Good food, no complicated ordering.</p></div><span class="menu-stamp">FRESH<br>FLAVOUR<br>FAVOURITES</span></div>
-        <div class="menu-grid">
-          <article class="food-card featured">
-            <div class="food-photo"><img src="https://afternoonexpress.co.za/website/admin/UserFiles/Image/2023/Kota.jpg" alt="Loaded South African kota" loading="lazy"><span class="food-tag">KASI FAVOURITE</span></div>
-            <div class="food-details"><div class="food-title"><h3>Classic Kota</h3><strong>R20+</strong></div><p>Quarter-loaf street-food goodness. Choose your fillings and make it yours.</p><button class="add-button" data-name="Kota" data-price="20">Add to order <span>+</span></button></div>
-          </article>
-          <article class="food-card">
-            <div class="food-photo"><img src="https://www.royco.co.za/sites/g/files/fnmzdf1866/files/2024-09/Easy%20Chakalaka_Pap%20%26%20Wors_0.png" alt="Boerewors with pap and chakalaka" loading="lazy"></div>
-            <div class="food-details"><div class="food-title"><h3>Wors Meal</h3><strong>R40</strong></div><p>Grilled wors served with pap and a tasty side.</p><button class="add-button" data-name="Wors Meal" data-price="40">Add to order <span>+</span></button></div>
-          </article>
-          <article class="food-card">
-            <div class="food-photo"><img src="https://images.unsplash.com/photo-1532634896-26909d0d4b3b?auto=format&fit=crop&w=1000&q=85" alt="Grilled steak meal" loading="lazy"></div>
-            <div class="food-details"><div class="food-title"><h3>Steak Meal</h3><strong>R60</strong></div><p>Grilled steak served with pap and your choice of sides.</p><button class="add-button" data-name="Steak Meal" data-price="60">Add to order <span>+</span></button></div>
-          </article>
-          <article class="food-card">
-            <div class="food-photo"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=1000&q=85" alt="Crispy chicken pieces" loading="lazy"></div>
-            <div class="food-details"><div class="food-title"><h3>Chicken Meal</h3><strong>R50</strong></div><p>A satisfying chicken meal with pap and tasty sides.</p><button class="add-button" data-name="Chicken Meal" data-price="50">Add to order <span>+</span></button></div>
-          </article>
-          <article class="food-card">
-            <div class="food-photo"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=1000&q=85" alt="Homestyle mince dish" loading="lazy"></div>
-            <div class="food-details"><div class="food-title"><h3>Mince Meal</h3><strong>R25</strong></div><p>Homestyle mince served with pap and sides.</p><button class="add-button" data-name="Mince Meal" data-price="25">Add to order <span>+</span></button></div>
-          </article>
-          <article class="food-card">
-            <div class="food-photo"><img src="https://images.unsplash.com/photo-1604909052743-94e838986d24?auto=format&fit=crop&w=1000&q=85" alt="Cooked liver meal" loading="lazy"></div>
-            <div class="food-details"><div class="food-title"><h3>Liver Meal</h3><strong>R35</strong></div><p>Flavourful liver served with pap and sides.</p><button class="add-button" data-name="Liver Meal" data-price="35">Add to order <span>+</span></button></div>
-          </article>
-        </div>
-        <p class="menu-disclaimer">Menu items, prices and availability are examples for this app preview. Please confirm with the business before ordering.</p>
+        <div class="section-top"><div><span class="eyebrow red">THE KASIPLATE MENU</span><h2>What are you <em>feeling?</em></h2><p>Breakfast runs, lunchtime favourites and proper supper plates.</p></div><span class="menu-stamp">KASI<br>FOOD<br>ALL DAY</span></div>
+        <nav class="menu-tabs" aria-label="Menu categories"><a href="#breakfast">Breakfast</a><a href="#lunch">Lunch</a><a href="#supper">Supper & late</a></nav>
+        <section class="menu-category" id="breakfast"><div class="category-heading"><div><span class="eyebrow red">GOOD MORNING</span><h3>Breakfast <em>corner</em></h3></div><p>Start the day with something warm.</p></div><div class="menu-grid">
+          <article class="food-card"><div class="food-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Magwinya(Fatcakes).JPG" alt="Golden South African amagwinya fat cakes" loading="lazy"><span class="food-tag">LOCAL FAVOURITE</span></div><div class="food-details"><div class="food-title"><h3>Fatcake / Magwinya</h3><strong>Price to confirm</strong></div><p>Fresh, golden fatcakes. Enjoy plain or ask about savoury fillings.</p><button class="add-button" data-name="Fatcake / Magwinya" data-price="0">Add to order <span>+</span></button></div></article>
+          <article class="food-card"><div class="food-photo"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=1000&q=85" alt="A warm cup of tea" loading="lazy"></div><div class="food-details"><div class="food-title"><h3>Tea</h3><strong>Price to confirm</strong></div><p>A comforting cup to go with your breakfast.</p><button class="add-button" data-name="Tea" data-price="0">Add to order <span>+</span></button></div></article>
+          <article class="food-card"><div class="food-photo"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1000&q=85" alt="Freshly brewed coffee" loading="lazy"></div><div class="food-details"><div class="food-title"><h3>Coffee</h3><strong>Price to confirm</strong></div><p>A fresh coffee for the morning commute or a quick break.</p><button class="add-button" data-name="Coffee" data-price="0">Add to order <span>+</span></button></div></article>
+        </div></section>
+        <section class="menu-category" id="lunch"><div class="category-heading"><div><span class="eyebrow red">LUNCH BREAK</span><h3>Kotas, plates <em>& more</em></h3></div><p>Big portions. Familiar kasi flavour.</p></div><div class="menu-grid">
+          <article class="food-card featured"><div class="food-photo"><img src="https://afternoonexpress.co.za/website/admin/UserFiles/Image/2023/Kota.jpg" alt="Loaded South African kota sandwich" loading="lazy"><span class="food-tag">KASI CLASSIC</span></div><div class="food-details"><div class="food-title"><h3>Classic Kota</h3><strong>Price to confirm</strong></div><p>Quarter-loaf street-food goodness. Ask about available fillings.</p><button class="add-button" data-name="Classic Kota" data-price="0">Add to order <span>+</span></button></div></article>
+          <article class="food-card"><div class="food-photo"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=1000&q=85" alt="Mince meal" loading="lazy"></div><div class="food-details"><div class="food-title"><h3>Mince Plate</h3><strong>Price to confirm</strong></div><p>Homestyle mince with your choice of pap or another available starch.</p><button class="add-button" data-name="Mince Plate" data-price="0">Add to order <span>+</span></button></div></article>
+          <article class="food-card"><div class="food-photo"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=85" alt="Hearty cooked meat plate" loading="lazy"></div><div class="food-details"><div class="food-title"><h3>Liver Plate</h3><strong>Price to confirm</strong></div><p>Flavourful liver with pap and sides, subject to availability.</p><button class="add-button" data-name="Liver Plate" data-price="0">Add to order <span>+</span></button></div></article>
+          <article class="food-card"><div class="food-photo"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=1000&q=85" alt="Golden fried chicken" loading="lazy"></div><div class="food-details"><div class="food-title"><h3>Chicken Plate</h3><strong>Price to confirm</strong></div><p>Chicken served with pap or another available side.</p><button class="add-button" data-name="Chicken Plate" data-price="0">Add to order <span>+</span></button></div></article>
+          <article class="food-card"><div class="food-photo"><img src="https://www.royco.co.za/sites/g/files/fnmzdf1866/files/2024-09/Easy%20Chakalaka_Pap%20%26%20Wors_0.png" alt="Boerewors with pap and chakalaka" loading="lazy"></div><div class="food-details"><div class="food-title"><h3>Wors & Pap</h3><strong>Price to confirm</strong></div><p>Grilled wors with pap and a tasty side.</p><button class="add-button" data-name="Wors & Pap" data-price="0">Add to order <span>+</span></button></div></article>
+          <article class="food-card"><div class="food-photo"><img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=1000&q=85" alt="Shawarma wrap" loading="lazy"></div><div class="food-details"><div class="food-title"><h3>Shawarma</h3><strong>Price to confirm</strong></div><p>A generously filled wrap with savoury meat and fresh toppings.</p><button class="add-button" data-name="Shawarma" data-price="0">Add to order <span>+</span></button></div></article>
+          <article class="food-card"><div class="food-photo"><img src="https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=1000&q=85" alt="Stacked dagwood sandwich" loading="lazy"></div><div class="food-details"><div class="food-title"><h3>Dagwood</h3><strong>Price to confirm</strong></div><p>A stacked sandwich packed with classic savoury fillings.</p><button class="add-button" data-name="Dagwood" data-price="0">Add to order <span>+</span></button></div></article>
+        </div></section>
+        <section class="menu-category" id="supper"><div class="category-heading"><div><span class="eyebrow red">AFTER HOURS</span><h3>Supper & <em>late plates</em></h3></div><p>For when the day runs long and hunger shows up.</p></div><div class="menu-grid">
+          <article class="food-card"><div class="food-photo"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=85" alt="Hearty beef supper plate" loading="lazy"></div><div class="food-details"><div class="food-title"><h3>Beef Stew & Pap</h3><strong>Price to confirm</strong></div><p>A hearty supper plate with a comforting, slow-cooked style.</p><button class="add-button" data-name="Beef Stew & Pap" data-price="0">Add to order <span>+</span></button></div></article>
+          <article class="food-card"><div class="food-photo"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1000&q=85" alt="Chicken curry supper" loading="lazy"></div><div class="food-details"><div class="food-title"><h3>Chicken Stew Plate</h3><strong>Price to confirm</strong></div><p>Chicken in a rich savoury sauce with a choice of side.</p><button class="add-button" data-name="Chicken Stew Plate" data-price="0">Add to order <span>+</span></button></div></article>
+          <article class="food-card"><div class="food-photo"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1000&q=85" alt="Hot takeaway supper" loading="lazy"></div><div class="food-details"><div class="food-title"><h3>Late-night Special</h3><strong>Ask for today's special</strong></div><p>Ask the kitchen what hot plates are available tonight.</p><button class="add-button" data-name="Late-night Special" data-price="0">Add to order <span>+</span></button></div></article>
+        </div></section>
+        <p class="menu-disclaimer">Menu ideas are grouped by breakfast, lunch and supper. Prices, portion sizes, ingredients and availability must be confirmed by the KasiPlate business. Food photos are illustrative references, not a guarantee of the exact meal served.</p>
       </div>
     </section>
-
     <section class="order-section" id="order"><div class="wrap order-layout">
       <div><span class="eyebrow red">YOUR FOOD LINE-UP</span><h2>Ready when <em>you are.</em></h2><p>Add meals from the menu and review your order here.</p><a class="text-link red-link" href="#menu">← Back to the menu</a></div>
       <div class="order-card"><div class="order-card-head"><h3>Your order</h3><span id="order-count">0 items</span></div><div id="cart-items" class="cart-items"><p class="empty-cart">Your order is empty. Let's fix that.</p></div><div class="order-total"><span>Estimated total</span><strong id="cart-total">R0</strong></div><button class="btn btn-red checkout-button" id="checkout-button" type="button">Continue <span>→</span></button><p class="checkout-note">This preview does not process payments or send orders to a restaurant.</p></div>
