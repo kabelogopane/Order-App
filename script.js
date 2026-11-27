@@ -1,14 +1,14 @@
 const cart = [];
-const money = value => "R" + value.toFixed(0);
+const money = value => value > 0 ? "R" + value.toFixed(0) : "Price to confirm";
 function renderCart(){
   const list=document.getElementById("cart-items");
-  const total=cart.reduce((sum,item)=>sum+item.price*item.qty,0);
+  const total=cart.reduce((sum,item)=>sum+item.price*item.qty,0);\n  const hasUnpriced=cart.some(item=>item.price===0);
   const count=cart.reduce((sum,item)=>sum+item.qty,0);
   document.getElementById("cart-count").textContent=count;
   document.getElementById("order-count").textContent=count+" "+(count===1?"item":"items");
-  document.getElementById("cart-total").textContent=money(total);
+  document.getElementById("cart-total").textContent=hasUnpriced?"Confirm with team":money(total);
   if(!cart.length){list.innerHTML='<p class="empty-cart">Your order is empty. Let\'s fix that.</p>';return;}
-  list.innerHTML=cart.map((item,index)=>'<div class="cart-row"><span>'+item.name+' × '+item.qty+'</span><span><strong>'+money(item.price*item.qty)+'</strong><button class="remove-item" type="button" data-remove="'+index+'" aria-label="Remove '+item.name+'">Remove</button></span></div>').join("");
+  list.innerHTML=cart.map((item,index)=>'<div class="cart-row"><span>'+item.name+' × '+item.qty+'</span><span><strong>'+(item.price>0?money(item.price*item.qty):"Price TBC")+'</strong><button class="remove-item" type="button" data-remove="'+index+'" aria-label="Remove '+item.name+'">Remove</button></span></div>').join("");
 }
 document.querySelectorAll(".add-button").forEach(button=>button.addEventListener("click",()=>{
   const name=button.dataset.name,price=Number(button.dataset.price);
